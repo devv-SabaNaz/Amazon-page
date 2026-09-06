@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+/*                NAVBAR PART          */
+.navbar{
+    display: flex;
+    /* navbar k tmam items ko ake hi line yaani horizontally align krta hai */
+    justify-content: space-between;
+    /* yeh alements k drmyaan brabr space deny kliye use hota hai. */
+    align-items: center;
+    /* yeh tmam item ko verticaly yaani oper or neechy sy center mai align krta ahi */
+    padding: 15px 25px;
+    /* 15px oper or neechy sy space deta hai or 25px left or right sy space deta hai. iss sy content corners k sath chipkta nahi hai. */
+    background-color: #131921;
+    color: white;
+    min-height: 60px;   
+}
+/*                     NAV-LOGO PART                */
+.nav-logo{
+    font-size: 30px;    
+    margin-right: 20px;
+    border: 1px solid transparent;
+    padding: 6px;
+    /* element k border or os k content k drmyaan space paida krta hai.*/
+}
+.nav-logo:hover{
+    border: 1px solid white;
+    cursor: pointer; 
+}
+.nav-location{
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+    padding: 6px;
+    /* is padding sy border text k sath chipka hua nahi rhy ga */
+    gap: 5px;
+    /* ye flex items k drmyaan automatically fasla deti hai */
+    border: 1px solid transparent; 
+    /* element k oper border show krtta hai ,transparent ake invisible border ha jis sy animation smooth hoti hai */
+}
+.nav-location:hover{
+    border: 1px solid white;
+    cursor: pointer;
+}
+.location-text p{
+    font-size:12px;    
+    color:#cccccc;
+}
+.location-text h5{
+    font-size:15px;
+    font-weight: bold;
+}
+/*                    NAV SEARCH BAR               */
+.nav-search{
+    display: flex;
+    flex: 1;
+    /* is sy element container mai mujood khali jga cover leta hai*/
+    background-color: white; 
+    border: 1px solid transparent;   
+    border-radius: 5px;
+}
+.nav-search:hover{      
+    border: 1px solid orange;
+    cursor: pointer;     
+}
+.search-select{
+   width: 40px;
+   /* all wala box chota ya bra krny kliye use kia hai  */
+   background-color: #f3f3f3;  
+   border: none; 
+   border-top-left-radius: 5px;
+   border-bottom-left-radius: 5px;
+}
+.search-icon{ 
+   display: flex;    
+   justify-content: center;
+   /* horizontal align krny kliye  */
+   align-items: center;
+   /* vertically center krny kliye */
+   width: 45px;
+   /*ye  button ki fix width hoti hai */
+   background-color: yellow; 
+   cursor: pointer;    
+   border: none;
+   /* iski wja sy browser apna defualt border hta deta hai */
+   border-radius: 0 5px 5px 0;
+   /* button k sirf right side k kony gol krny kliye */
+}
+.search-input{     
+    flex: 1; 
+    /* bachi hoi extra space input ko deta hai */
+    background-color: white;
+    padding: 10px;
+    /* andr ki space kliye , text edge sy dur kia  */
+    outline: none;
+    /* all button pr click krny pr jo blue color ata hai osy remove krta hai */ 
+    cursor: pointer;
+}
+
+/*                   NAV LANGUAGE PART               */
+.nav-language{
+  padding: 8px;  
+  border: 1px solid transparent;
+} 
+.nav-language:hover{ 
+  border: 1px solid white;
+  cursor: pointer;
+} 
+.language-options select{
+  border: none;
+  /* default border ko hta deta hai browser k  */  
+  color:black;
+  cursor: pointer;
+}
+
+/*                NAV SIGNIN PART                */
+.nav-signin{
+  padding: 6px;  
+  border: 1px solid transparent;
+}
+.nav-signin p:first-child{
+  font-size: 13px; 
+  /* fisrt child ka mtlb hai sb sy pehla paragraph */
+}
+.nav-signin p:last-child{
+   font-size: 16px; 
+   font-weight: bold; 
+   /* last child ka mtlb hai k sab sy last wala paragraph */
+}
+.nav-signin:hover{
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+/*                    NAV ORDERS               */
+.nav-orders{
+  padding: 6px;  
+  border: 1px solid transparent;
+}
+.nav-orders p:first-child{
+  font-size: 13px;   
+}
+.nav-orders p:last-child{
+  font-size: 16px; 
+  font-weight: bold;
+}
+.nav-orders:hover{
+  border: 1px solid white;
+  cursor: pointer;
+}
+/*               NAV CART PART                    */
+.nav-cart{
+ padding: 8px;
+ font-size: 15px;
+ border: 1px solid transparent;
+}
+.nav-cart:hover{
+  border: 1px solid white;
+  cursor: pointer;
+}
+.nav-cart i{
+ font-size: 25px;
+} 
+
+/*                  PANEL PART                      */
+.panel{
+  display: flex;  
+  align-items: center;
+  /* panel all or panel options ko ake line mai rkhny kliye */
+  background-color: #232f3e;
+  color: white;
+  padding: 10px 20px;
+  gap: 20px;
+  /* panel all or panel options k beech distance kliye */ 
+}
+.panel-all{
+    display: flex;
+    /* Icon aur All ko ek line mein rakhta hai */
+    align-items: center;
+    gap: 5px;  
+    /* icon or text k beech gap */
+}
+
+.panel-options{
+  display: flex; 
+   /*links ko ake line mai lany klie  */
+ gap: 20px;
+ /* he link k beech spacing kliye */
+}
+.panel-options a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;    
+}
+
+/*                   JERO PART                         */
+.hero-section{
+  height: 550px;
+  background-image: url(images/bck.jpg);
+  background-size: cover;
+  background-position: center top;
+  display: flex;
+  justify-content: center;
+  align-items:flex-end;
+}
+.hero-msg{
+    background-color: white;
+    color: black;
+    padding: 10px;
+    margin-bottom: 25px;
+}
+.shop-section{
+  display: flex;
+  flex-wrap: wrap;
+  /*  Agar line mein space khatam ho jaye, to items ko next line mein bhej deta hai*/
+  justify-content: space-evenly;
+  /* Har card ke left aur right equal space deta hai */
+  background-color: #e3e6e6;
+  padding: 20px;
+}
+.shop-box{
+  width: 23%;
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;   
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  /* Ye card ke neeche halka sa shadow banata hai */
+}
+.shop-box:hover{
+ transition: 0.3s;
+ /*Animation ko smooth banata hai  */
+  transform: translateY(-5px);
+  /*Mouse lane par card 5px upar uth jata hai  */
+}
+.box-img{
+  height: 280px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+/*                  FOOTER PART                            */
+.footer-top{
+  background-color: #37475a;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.footer-top:hover{
+  background-color: #485769;
+}
+
+.footer-links{
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #232f3e;
+  color: white;
+  padding: 40px 20px;
+}
+
+.footer-column{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-column h3{
+  margin-bottom: 15px;
+    /* Heading aur pehle link ke beech gap */
+  font-size: 18px;
+}
+
+.footer-column a{
+  color: #dddddd;
+  text-decoration: none;
+  margin-bottom: 10px;
+/* Har link ke neeche spacing */
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.footer-column a:hover{
+  text-decoration: underline;
+}
+.footer-logo{
+  background-color: #232f3e;
+  border-top: 1px solid #3a4553;
+    /*Ye upar ek line draw karta hai jesy amazon logo k upr bareek c line hai  */
+  text-align: center;
+  padding: 25px;
+  font-size: 40px;
+  color: white;
+}
+
+.footer-bottom{
+  background-color: #131a22;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 13px;
+}
+
+.footer-bottom p{
+  margin: 5px 0;
+}
